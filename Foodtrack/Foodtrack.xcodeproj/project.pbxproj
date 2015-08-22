@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		755A141F1B8932B000F99266 /* TWMessageBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 755A141E1B8932B000F99266 /* TWMessageBarManager.m */; };
+		755A14211B89333100F99266 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755A14201B89333100F99266 /* Foundation.framework */; };
+		755A14231B89334400F99266 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755A14221B89334400F99266 /* CoreGraphics.framework */; };
+		755A14251B89334B00F99266 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755A14241B89334B00F99266 /* UIKit.framework */; };
+		755A14281B8938D200F99266 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755A14271B8938D200F99266 /* Alert.swift */; };
 		DBC02CDF1B891FD400C8E14A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC02CDE1B891FD400C8E14A /* AppDelegate.swift */; };
 		DBC02CE11B891FD400C8E14A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC02CE01B891FD400C8E14A /* ViewController.swift */; };
 		DBC02CE41B891FD400C8E14A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC02CE21B891FD400C8E14A /* Main.storyboard */; };
@@ -27,6 +32,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		755A141C1B8932AF00F99266 /* Foodtrack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Foodtrack-Bridging-Header.h"; sourceTree = "<group>"; };
+		755A141D1B8932B000F99266 /* TWMessageBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWMessageBarManager.h; sourceTree = "<group>"; };
+		755A141E1B8932B000F99266 /* TWMessageBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMessageBarManager.m; sourceTree = "<group>"; };
+		755A14201B89333100F99266 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		755A14221B89334400F99266 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		755A14241B89334B00F99266 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		755A14271B8938D200F99266 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		DBC02CD91B891FD400C8E14A /* Foodtrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodtrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC02CDD1B891FD400C8E14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBC02CDE1B891FD400C8E14A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				755A14251B89334B00F99266 /* UIKit.framework in Frameworks */,
+				755A14231B89334400F99266 /* CoreGraphics.framework in Frameworks */,
+				755A14211B89333100F99266 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +73,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		755A14261B89339300F99266 /* Front */ = {
+			isa = PBXGroup;
+			children = (
+				755A141D1B8932B000F99266 /* TWMessageBarManager.h */,
+				755A141E1B8932B000F99266 /* TWMessageBarManager.m */,
+			);
+			name = Front;
+			sourceTree = "<group>";
+		};
+		755A14291B8939B000F99266 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				755A14271B8938D200F99266 /* Alert.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		DBC02CD01B891FD400C8E14A = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				DBC02CFF1B89242300C8E14A /* Frameworks */,
+				755A14261B89339300F99266 /* Front */,
+				755A14291B8939B000F99266 /* Helper */,
 				DBC02CDE1B891FD400C8E14A /* AppDelegate.swift */,
 				DBC02CE01B891FD400C8E14A /* ViewController.swift */,
 				DBC02D0A1B89256100C8E14A /* LoginViewController.swift */,
@@ -87,6 +121,7 @@
 				DBC02CE51B891FD400C8E14A /* Images.xcassets */,
 				DBC02CE71B891FD400C8E14A /* LaunchScreen.xib */,
 				DBC02CDC1B891FD400C8E14A /* Supporting Files */,
+				755A141C1B8932AF00F99266 /* Foodtrack-Bridging-Header.h */,
 			);
 			path = Foodtrack;
 			sourceTree = "<group>";
@@ -119,6 +154,9 @@
 		DBC02CFF1B89242300C8E14A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				755A14241B89334B00F99266 /* UIKit.framework */,
+				755A14221B89334400F99266 /* CoreGraphics.framework */,
+				755A14201B89333100F99266 /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -240,8 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				755A141F1B8932B000F99266 /* TWMessageBarManager.m in Sources */,
 				DBC02D0B1B89256100C8E14A /* LoginViewController.swift in Sources */,
 				DBC02CE11B891FD400C8E14A /* ViewController.swift in Sources */,
+				755A14281B8938D200F99266 /* Alert.swift in Sources */,
 				DBC02CDF1B891FD400C8E14A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +409,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Foodtrack",
@@ -376,6 +417,8 @@
 				INFOPLIST_FILE = Foodtrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Foodtrack/Foodtrack-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -383,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Foodtrack",
@@ -390,6 +434,7 @@
 				INFOPLIST_FILE = Foodtrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Foodtrack/Foodtrack-Bridging-Header.h";
 			};
 			name = Release;
 		};
