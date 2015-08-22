@@ -13,10 +13,6 @@
 		DBC02CE61B891FD400C8E14A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC02CE51B891FD400C8E14A /* Images.xcassets */; };
 		DBC02CE91B891FD400C8E14A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBC02CE71B891FD400C8E14A /* LaunchScreen.xib */; };
 		DBC02CF51B891FD400C8E14A /* FoodtrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC02CF41B891FD400C8E14A /* FoodtrackTests.swift */; };
-		DBC02D041B89243800C8E14A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC02D001B89243800C8E14A /* Fabric.framework */; };
-		DBC02D051B89243800C8E14A /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC02D011B89243800C8E14A /* TwitterKit.framework */; };
-		DBC02D061B89243800C8E14A /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DBC02D021B89243800C8E14A /* TwitterKitResources.bundle */; };
-		DBC02D071B89243800C8E14A /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC02D031B89243800C8E14A /* TwitterCore.framework */; };
 		DBC02D0B1B89256100C8E14A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC02D0A1B89256100C8E14A /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,10 +37,6 @@
 		DBC02CEE1B891FD400C8E14A /* FoodtrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodtrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC02CF31B891FD400C8E14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBC02CF41B891FD400C8E14A /* FoodtrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodtrackTests.swift; sourceTree = "<group>"; };
-		DBC02D001B89243800C8E14A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		DBC02D011B89243800C8E14A /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
-		DBC02D021B89243800C8E14A /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
-		DBC02D031B89243800C8E14A /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		DBC02D0A1B89256100C8E14A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,9 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBC02D041B89243800C8E14A /* Fabric.framework in Frameworks */,
-				DBC02D071B89243800C8E14A /* TwitterCore.framework in Frameworks */,
-				DBC02D051B89243800C8E14A /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,10 +119,6 @@
 		DBC02CFF1B89242300C8E14A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DBC02D001B89243800C8E14A /* Fabric.framework */,
-				DBC02D011B89243800C8E14A /* TwitterKit.framework */,
-				DBC02D021B89243800C8E14A /* TwitterKitResources.bundle */,
-				DBC02D031B89243800C8E14A /* TwitterCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -219,7 +204,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBC02D061B89243800C8E14A /* TwitterKitResources.bundle in Resources */,
 				DBC02CE41B891FD400C8E14A /* Main.storyboard in Resources */,
 				DBC02CE91B891FD400C8E14A /* LaunchScreen.xib in Resources */,
 				DBC02CE61B891FD400C8E14A /* Images.xcassets in Resources */,
@@ -247,7 +231,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run 789b7f675b3ca492c9b1a427bd0bbd0ed147c791 07ba35bcc05b859cae2347d6666010654e47b83a11d2392d6db2bf40d5e53353";
+			shellScript = "";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -462,6 +446,7 @@
 				DBC02CFA1B891FD400C8E14A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBC02CFB1B891FD400C8E14A /* Build configuration list for PBXNativeTarget "FoodtrackTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +455,7 @@
 				DBC02CFD1B891FD400C8E14A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
