@@ -85,9 +85,16 @@ class TrucksTableViewController: UITableViewController, DAOFoodtruckProtocol {
         cell.titleCell.text = objetoAtual["nome"] as? String
         cell.categoryCell.text = objetoAtual["categoria"] as? String
         cell.valueCell.text = objetoAtual["preco"] as? String
+        cell.imageView?.tag = indexPath.row
         
-        // Configure the cell...
-
+        if let arquivoFoto1 = objetoAtual["foto1"] as? PFFile {
+            arquivoFoto1.getDataInBackgroundWithBlock({ (foto, error) -> Void in
+                if(foto != nil){
+                    cell.imageCell.setBackgroundImage(UIImage(data: foto!), forState: .Normal)
+                }
+            })
+        }
+        
         return cell
     }
 

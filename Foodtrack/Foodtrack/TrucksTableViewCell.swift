@@ -21,7 +21,8 @@ class TrucksTableViewCell: PFTableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        logoCell.layer.cornerRadius = 30.0
+        logoCell.layer.cornerRadius = logoCell.frame.size.width/2
+        30.0
         logoCell.layer.masksToBounds = true
     }
 
