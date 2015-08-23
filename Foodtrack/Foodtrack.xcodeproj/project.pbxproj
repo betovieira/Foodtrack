@@ -25,6 +25,25 @@
 		75D457141B89721100D22361 /* FoodtrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D457131B89721100D22361 /* FoodtrackViewController.swift */; };
 		75D457161B89787B00D22361 /* PopularTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D457151B89787B00D22361 /* PopularTableViewController.swift */; };
 		75D4571A1B8979F800D22361 /* TrucksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D457191B8979F800D22361 /* TrucksTableViewController.swift */; };
+		DB90CDF61B897E78000DEE61 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CDEF1B897E78000DEE61 /* Bolts.framework */; };
+		DB90CDF71B897E78000DEE61 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CDF01B897E78000DEE61 /* Parse.framework */; };
+		DB90CDF81B897E78000DEE61 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CDF11B897E78000DEE61 /* ParseCrashReporting.framework */; };
+		DB90CDF91B897E78000DEE61 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CDF21B897E78000DEE61 /* ParseFacebookUtils.framework */; };
+		DB90CDFA1B897E78000DEE61 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CDF31B897E78000DEE61 /* ParseFacebookUtilsV4.framework */; };
+		DB90CDFB1B897E78000DEE61 /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CDF41B897E78000DEE61 /* ParseTwitterUtils.framework */; };
+		DB90CDFC1B897E78000DEE61 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CDF51B897E78000DEE61 /* ParseUI.framework */; };
+		DB90CE001B897EC5000DEE61 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CDFF1B897EC5000DEE61 /* AudioToolbox.framework */; };
+		DB90CE021B897ED1000DEE61 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CE011B897ED1000DEE61 /* CFNetwork.framework */; };
+		DB90CE091B897F40000DEE61 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CE031B897F40000DEE61 /* CoreLocation.framework */; };
+		DB90CE0A1B897F40000DEE61 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CE041B897F40000DEE61 /* libz.dylib */; };
+		DB90CE0B1B897F40000DEE61 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CE051B897F40000DEE61 /* QuartzCore.framework */; };
+		DB90CE0C1B897F40000DEE61 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CE061B897F40000DEE61 /* Security.framework */; };
+		DB90CE0D1B897F40000DEE61 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CE071B897F40000DEE61 /* StoreKit.framework */; };
+		DB90CE0E1B897F40000DEE61 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CE081B897F40000DEE61 /* SystemConfiguration.framework */; };
+		DB90CE101B897F4C000DEE61 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CE0F1B897F4C000DEE61 /* libsqlite3.dylib */; };
+		DB90CE141B8980AD000DEE61 /* DAOUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90CE131B8980AD000DEE61 /* DAOUsuario.swift */; };
+		DB90CE161B8980D3000DEE61 /* DAOFoodtruck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90CE151B8980D3000DEE61 /* DAOFoodtruck.swift */; };
+		DB90CE181B8980E3000DEE61 /* DAOPromocao.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90CE171B8980E3000DEE61 /* DAOPromocao.swift */; };
 		DBC02CDF1B891FD400C8E14A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC02CDE1B891FD400C8E14A /* AppDelegate.swift */; };
 		DBC02CE41B891FD400C8E14A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC02CE21B891FD400C8E14A /* Main.storyboard */; };
 		DBC02CE61B891FD400C8E14A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC02CE51B891FD400C8E14A /* Images.xcassets */; };
@@ -69,6 +88,25 @@
 		75D457131B89721100D22361 /* FoodtrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodtrackViewController.swift; sourceTree = "<group>"; };
 		75D457151B89787B00D22361 /* PopularTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularTableViewController.swift; sourceTree = "<group>"; };
 		75D457191B8979F800D22361 /* TrucksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrucksTableViewController.swift; sourceTree = "<group>"; };
+		DB90CDEF1B897E78000DEE61 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		DB90CDF01B897E78000DEE61 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		DB90CDF11B897E78000DEE61 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		DB90CDF21B897E78000DEE61 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		DB90CDF31B897E78000DEE61 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		DB90CDF41B897E78000DEE61 /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseTwitterUtils.framework; sourceTree = "<group>"; };
+		DB90CDF51B897E78000DEE61 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		DB90CDFF1B897EC5000DEE61 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DB90CE011B897ED1000DEE61 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DB90CE031B897F40000DEE61 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DB90CE041B897F40000DEE61 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DB90CE051B897F40000DEE61 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DB90CE061B897F40000DEE61 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DB90CE071B897F40000DEE61 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DB90CE081B897F40000DEE61 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DB90CE0F1B897F4C000DEE61 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DB90CE131B8980AD000DEE61 /* DAOUsuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOUsuario.swift; sourceTree = "<group>"; };
+		DB90CE151B8980D3000DEE61 /* DAOFoodtruck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOFoodtruck.swift; sourceTree = "<group>"; };
+		DB90CE171B8980E3000DEE61 /* DAOPromocao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOPromocao.swift; sourceTree = "<group>"; };
 		DBC02CD91B891FD400C8E14A /* Foodtrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodtrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC02CDD1B891FD400C8E14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBC02CDE1B891FD400C8E14A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,9 +123,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB90CE0D1B897F40000DEE61 /* StoreKit.framework in Frameworks */,
+				DB90CE101B897F4C000DEE61 /* libsqlite3.dylib in Frameworks */,
+				DB90CE091B897F40000DEE61 /* CoreLocation.framework in Frameworks */,
+				DB90CE0A1B897F40000DEE61 /* libz.dylib in Frameworks */,
+				DB90CE0B1B897F40000DEE61 /* QuartzCore.framework in Frameworks */,
+				DB90CE0C1B897F40000DEE61 /* Security.framework in Frameworks */,
+				DB90CE0E1B897F40000DEE61 /* SystemConfiguration.framework in Frameworks */,
+				DB90CE021B897ED1000DEE61 /* CFNetwork.framework in Frameworks */,
+				DB90CE001B897EC5000DEE61 /* AudioToolbox.framework in Frameworks */,
+				DB90CDF91B897E78000DEE61 /* ParseFacebookUtils.framework in Frameworks */,
 				755A14251B89334B00F99266 /* UIKit.framework in Frameworks */,
+				DB90CDFC1B897E78000DEE61 /* ParseUI.framework in Frameworks */,
+				DB90CDFA1B897E78000DEE61 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				DB90CDF81B897E78000DEE61 /* ParseCrashReporting.framework in Frameworks */,
+				DB90CDFB1B897E78000DEE61 /* ParseTwitterUtils.framework in Frameworks */,
 				755A14231B89334400F99266 /* CoreGraphics.framework in Frameworks */,
 				755A14211B89333100F99266 /* Foundation.framework in Frameworks */,
+				DB90CDF61B897E78000DEE61 /* Bolts.framework in Frameworks */,
+				DB90CDF71B897E78000DEE61 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +192,36 @@
 			name = SideBar;
 			sourceTree = "<group>";
 		};
+		DB90CE111B897F5F000DEE61 /* FrameWork2 */ = {
+			isa = PBXGroup;
+			children = (
+				DB90CE0F1B897F4C000DEE61 /* libsqlite3.dylib */,
+				DB90CE041B897F40000DEE61 /* libz.dylib */,
+				DB90CE051B897F40000DEE61 /* QuartzCore.framework */,
+				DB90CE061B897F40000DEE61 /* Security.framework */,
+				DB90CE071B897F40000DEE61 /* StoreKit.framework */,
+				DB90CE081B897F40000DEE61 /* SystemConfiguration.framework */,
+				DB90CE011B897ED1000DEE61 /* CFNetwork.framework */,
+				DB90CDFF1B897EC5000DEE61 /* AudioToolbox.framework */,
+				DB90CE031B897F40000DEE61 /* CoreLocation.framework */,
+			);
+			name = FrameWork2;
+			sourceTree = "<group>";
+		};
+		DB90CE121B898097000DEE61 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				DB90CE131B8980AD000DEE61 /* DAOUsuario.swift */,
+				DB90CE151B8980D3000DEE61 /* DAOFoodtruck.swift */,
+				DB90CE171B8980E3000DEE61 /* DAOPromocao.swift */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
 		DBC02CD01B891FD400C8E14A = {
 			isa = PBXGroup;
 			children = (
+				DB90CE111B897F5F000DEE61 /* FrameWork2 */,
 				DBC02CDB1B891FD400C8E14A /* Foodtrack */,
 				DBC02CF11B891FD400C8E14A /* FoodtrackTests */,
 				DBC02CDA1B891FD400C8E14A /* Products */,
@@ -159,6 +240,7 @@
 		DBC02CDB1B891FD400C8E14A /* Foodtrack */ = {
 			isa = PBXGroup;
 			children = (
+				DB90CE121B898097000DEE61 /* DAO */,
 				DBC02CFF1B89242300C8E14A /* Frameworks */,
 				755A14261B89339300F99266 /* Front */,
 				755A14291B8939B000F99266 /* Helper */,
@@ -207,6 +289,13 @@
 		DBC02CFF1B89242300C8E14A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB90CDEF1B897E78000DEE61 /* Bolts.framework */,
+				DB90CDF01B897E78000DEE61 /* Parse.framework */,
+				DB90CDF11B897E78000DEE61 /* ParseCrashReporting.framework */,
+				DB90CDF21B897E78000DEE61 /* ParseFacebookUtils.framework */,
+				DB90CDF31B897E78000DEE61 /* ParseFacebookUtilsV4.framework */,
+				DB90CDF41B897E78000DEE61 /* ParseTwitterUtils.framework */,
+				DB90CDF51B897E78000DEE61 /* ParseUI.framework */,
 				755A14241B89334B00F99266 /* UIKit.framework */,
 				755A14221B89334400F99266 /* CoreGraphics.framework */,
 				755A14201B89333100F99266 /* Foundation.framework */,
@@ -332,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				755A141F1B8932B000F99266 /* TWMessageBarManager.m in Sources */,
+				DB90CE181B8980E3000DEE61 /* DAOPromocao.swift in Sources */,
 				75D456F91B89408900D22361 /* REFrostedContainerViewController.m in Sources */,
 				75D4570E1B8967D400D22361 /* CategoryTableViewController.swift in Sources */,
 				75D456FC1B89408900D22361 /* UIView+REFrostedViewController.m in Sources */,
@@ -341,11 +431,13 @@
 				75D4571A1B8979F800D22361 /* TrucksTableViewController.swift in Sources */,
 				75D456FD1B89408900D22361 /* UIViewController+REFrostedViewController.m in Sources */,
 				75D456FA1B89408900D22361 /* REFrostedViewController.m in Sources */,
+				DB90CE161B8980D3000DEE61 /* DAOFoodtruck.swift in Sources */,
 				DBC02CDF1B891FD400C8E14A /* AppDelegate.swift in Sources */,
 				75D457161B89787B00D22361 /* PopularTableViewController.swift in Sources */,
 				75D457141B89721100D22361 /* FoodtrackViewController.swift in Sources */,
 				75D456D61B893E6C00D22361 /* HomeViewController.swift in Sources */,
 				75D456F81B89408900D22361 /* RECommonFunctions.m in Sources */,
+				DB90CE141B8980AD000DEE61 /* DAOUsuario.swift in Sources */,
 				75D456FB1B89408900D22361 /* UIImage+REFrostedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

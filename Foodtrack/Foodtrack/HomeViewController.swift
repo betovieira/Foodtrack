@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class HomeViewController: UIViewController {
 
@@ -17,6 +18,8 @@ class HomeViewController: UIViewController {
         SignInViewController.signIn = false
     }
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         SignInButton.layer.cornerRadius = 5.0
@@ -25,6 +28,15 @@ class HomeViewController: UIViewController {
         if(SignInViewController.signIn == true) {
             self.performSegueWithIdentifier("FoodtrackViewController", sender: self)
         }
+        
+        /*  ---- TESTES DE BANCO DE DADOS ---- */
+        
+        let dbFoodtruck = DAOFoodtruck()
+        //let pfobject = dbFoodtruck.retornarFoodtruckPorID("W9e47M5r91")
+        
+        //dbFoodtruck.avaliaFoodtruck(pfobject!, avaliacao: 3)
+        dbFoodtruck.listaFoodtrucksPorCategoria("Hamburguer")
+        
     }
     
     override func viewDidAppear(animated: Bool) {
