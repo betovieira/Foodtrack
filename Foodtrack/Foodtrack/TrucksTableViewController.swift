@@ -10,14 +10,18 @@ import UIKit
 
 class TrucksTableViewController: UITableViewController {
 
+    // set barName
+    @IBOutlet weak var navName: UINavigationItem!
+    
+    // get index category
+    static var tag = Int()
+    
+    // category
+    var category = ["Hamburguer", "Hotdog", "Massas", "Vegetariano", "Oriental", "Doces", "Bebidas", "Salgados"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        navName.title = category[TrucksTableViewController.tag]
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,7 +44,7 @@ class TrucksTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("trucksCell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("trucksCell", forIndexPath: indexPath) as! TrucksTableViewCell
 
         // Configure the cell...
 

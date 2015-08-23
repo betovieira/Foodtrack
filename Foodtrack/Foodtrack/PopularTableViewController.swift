@@ -9,7 +9,7 @@
 import UIKit
 
 class PopularTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,7 +40,7 @@ class PopularTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("popularCell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("popularCell", forIndexPath: indexPath) as! PopularTableViewCell
 
         // Configure the cell...
 

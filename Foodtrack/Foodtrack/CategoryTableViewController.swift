@@ -10,9 +10,11 @@ import UIKit
 
 class CategoryTableViewController: UITableViewController {
 
+    var imageCategory = [String()]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        imageCategory = ["Categoria_Hamburguer", "Categoria_Todos-2", "Categoria_Massas-2", "Categoria_Vegetariano", "Categoria_Oriental", "Categorias_Doces", "Categorias_Drinks", "Categorias_Salgados"]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -36,14 +38,13 @@ class CategoryTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 10
+        return imageCategory.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("categoryCell", forIndexPath: indexPath) as! UITableViewCell
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("categoryCell", forIndexPath: indexPath) as! CategoryTableViewCell
+        cell.imageButton.setBackgroundImage(UIImage(named: imageCategory[indexPath.row]), forState: UIControlState.Normal)
+        cell.imageButton.tag = indexPath.row
         return cell
     }
 
