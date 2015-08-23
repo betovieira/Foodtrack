@@ -91,9 +91,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB90CE0D1B897F40000DEE61 /* StoreKit.framework in Frameworks */,
+				DB90CE101B897F4C000DEE61 /* libsqlite3.dylib in Frameworks */,
+				DB90CE091B897F40000DEE61 /* CoreLocation.framework in Frameworks */,
+				DB90CE0A1B897F40000DEE61 /* libz.dylib in Frameworks */,
+				DB90CE0B1B897F40000DEE61 /* QuartzCore.framework in Frameworks */,
+				DB90CE0C1B897F40000DEE61 /* Security.framework in Frameworks */,
+				DB90CE0E1B897F40000DEE61 /* SystemConfiguration.framework in Frameworks */,
+				DB90CE021B897ED1000DEE61 /* CFNetwork.framework in Frameworks */,
+				DB90CE001B897EC5000DEE61 /* AudioToolbox.framework in Frameworks */,
+				DB90CDF91B897E78000DEE61 /* ParseFacebookUtils.framework in Frameworks */,
 				755A14251B89334B00F99266 /* UIKit.framework in Frameworks */,
+				DB90CDFC1B897E78000DEE61 /* ParseUI.framework in Frameworks */,
+				DB90CDFA1B897E78000DEE61 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				DB90CDF81B897E78000DEE61 /* ParseCrashReporting.framework in Frameworks */,
+				DB90CDFB1B897E78000DEE61 /* ParseTwitterUtils.framework in Frameworks */,
 				755A14231B89334400F99266 /* CoreGraphics.framework in Frameworks */,
 				755A14211B89333100F99266 /* Foundation.framework in Frameworks */,
+				DB90CDF61B897E78000DEE61 /* Bolts.framework in Frameworks */,
+				DB90CDF71B897E78000DEE61 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,9 +160,36 @@
 			name = SideBar;
 			sourceTree = "<group>";
 		};
+		DB90CE111B897F5F000DEE61 /* FrameWork2 */ = {
+			isa = PBXGroup;
+			children = (
+				DB90CE0F1B897F4C000DEE61 /* libsqlite3.dylib */,
+				DB90CE041B897F40000DEE61 /* libz.dylib */,
+				DB90CE051B897F40000DEE61 /* QuartzCore.framework */,
+				DB90CE061B897F40000DEE61 /* Security.framework */,
+				DB90CE071B897F40000DEE61 /* StoreKit.framework */,
+				DB90CE081B897F40000DEE61 /* SystemConfiguration.framework */,
+				DB90CE011B897ED1000DEE61 /* CFNetwork.framework */,
+				DB90CDFF1B897EC5000DEE61 /* AudioToolbox.framework */,
+				DB90CE031B897F40000DEE61 /* CoreLocation.framework */,
+			);
+			name = FrameWork2;
+			sourceTree = "<group>";
+		};
+		DB90CE121B898097000DEE61 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				DB90CE131B8980AD000DEE61 /* DAOUsuario.swift */,
+				DB90CE151B8980D3000DEE61 /* DAOFoodtruck.swift */,
+				DB90CE171B8980E3000DEE61 /* DAOPromocao.swift */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
 		DBC02CD01B891FD400C8E14A = {
 			isa = PBXGroup;
 			children = (
+				DB90CE111B897F5F000DEE61 /* FrameWork2 */,
 				DBC02CDB1B891FD400C8E14A /* Foodtrack */,
 				DBC02CF11B891FD400C8E14A /* FoodtrackTests */,
 				DBC02CDA1B891FD400C8E14A /* Products */,
@@ -165,6 +208,7 @@
 		DBC02CDB1B891FD400C8E14A /* Foodtrack */ = {
 			isa = PBXGroup;
 			children = (
+				DB90CE121B898097000DEE61 /* DAO */,
 				DBC02CFF1B89242300C8E14A /* Frameworks */,
 				755A14261B89339300F99266 /* Front */,
 				755A14291B8939B000F99266 /* Helper */,
@@ -216,6 +260,13 @@
 		DBC02CFF1B89242300C8E14A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB90CDEF1B897E78000DEE61 /* Bolts.framework */,
+				DB90CDF01B897E78000DEE61 /* Parse.framework */,
+				DB90CDF11B897E78000DEE61 /* ParseCrashReporting.framework */,
+				DB90CDF21B897E78000DEE61 /* ParseFacebookUtils.framework */,
+				DB90CDF31B897E78000DEE61 /* ParseFacebookUtilsV4.framework */,
+				DB90CDF41B897E78000DEE61 /* ParseTwitterUtils.framework */,
+				DB90CDF51B897E78000DEE61 /* ParseUI.framework */,
 				755A14241B89334B00F99266 /* UIKit.framework */,
 				755A14221B89334400F99266 /* CoreGraphics.framework */,
 				755A14201B89333100F99266 /* Foundation.framework */,
@@ -341,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				755A141F1B8932B000F99266 /* TWMessageBarManager.m in Sources */,
+				DB90CE181B8980E3000DEE61 /* DAOPromocao.swift in Sources */,
 				75D456F91B89408900D22361 /* REFrostedContainerViewController.m in Sources */,
 				75D457201B898FA600D22361 /* PopularTableViewCell.swift in Sources */,
 				75D4570E1B8967D400D22361 /* CategoryTableViewController.swift in Sources */,
@@ -351,6 +403,7 @@
 				75D4571A1B8979F800D22361 /* TrucksTableViewController.swift in Sources */,
 				75D456FD1B89408900D22361 /* UIViewController+REFrostedViewController.m in Sources */,
 				75D456FA1B89408900D22361 /* REFrostedViewController.m in Sources */,
+				DB90CE161B8980D3000DEE61 /* DAOFoodtruck.swift in Sources */,
 				DBC02CDF1B891FD400C8E14A /* AppDelegate.swift in Sources */,
 				75D457161B89787B00D22361 /* PopularTableViewController.swift in Sources */,
 				75D457141B89721100D22361 /* FoodtrackViewController.swift in Sources */,

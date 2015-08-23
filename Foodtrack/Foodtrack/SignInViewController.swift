@@ -9,7 +9,8 @@
 import UIKit
 
 class SignInViewController: UIViewController {
-
+    var dbUsuario = DAOUsuario()
+    
     //  Simple Var
     static var signIn = false
     
@@ -34,6 +35,10 @@ class SignInViewController: UIViewController {
     @IBAction func enterAction(sender: AnyObject) {
         SignInViewController.signIn = true
         self.navigationController?.popViewControllerAnimated(false)
+        
+        //let result = dbUsuario.logarUsuario("humbertovsieira12castro@gmail.com", senha: "123")
+        //println("O RESULTADO DO LOGIN FOI: \(result)")
+        
     }
     
     @IBAction func SignInWithFacebook(sender: AnyObject) {

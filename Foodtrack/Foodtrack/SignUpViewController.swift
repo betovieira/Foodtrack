@@ -7,22 +7,39 @@
 //
 
 import UIKit
+import Parse
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, DAOUsuarioProtocol {
 
     //UIButton
     @IBOutlet weak var SignUpWithFacebookButton: UIButton!
     @IBOutlet weak var SignUpWithTwitterButton: UIButton!
     @IBOutlet weak var enterButton: UIButton!
+    
+    //BANCO
+    let dbUsuario = DAOUsuario()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         SignUpWithFacebookButton.layer.cornerRadius = 5
         SignUpWithTwitterButton.layer.cornerRadius = 5
         enterButton.layer.cornerRadius = 5
-
+        
+        dbUsuario.delegate = self
+        
         // Do any additional setup after loading the view.
     }
+    
+    func loginFacebookSucesso() {}
+    func loginFacebookErro(){}
+    
+    func cadastroSucesso(){
+        /* Aqui coloca o evento do que acontece quando ele é cadastrado com sucesso */
+    }
+    func cadastroErro(error:NSError){
+        /* Erro na hora do login */
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -32,10 +49,21 @@ class SignUpViewController: UIViewController {
     @IBAction func enterAction(sender: AnyObject) {
         SignInViewController.signIn = true
         self.navigationController?.popViewControllerAnimated(false)
+        /*
+        var usuario = PFUser()
+        usuario.username = "humbertovieira12castro@gmail.com"
+        usuario.password = "123"
+        usuario.email = "humbertovieira12castro@gmail.com"
+        usuario["nome"] = "Jobs"
+        
+        dbUsuario.cadastrarUsuario(usuario)*/
     }
     
     @IBAction func SignUpWithFacebook(sender: AnyObject) {
         //  inserir codigo de cadastro via facebook
+        
+        
+        
     }
 
     @IBAction func SignUpWithTwitterButton(sender: AnyObject) {
