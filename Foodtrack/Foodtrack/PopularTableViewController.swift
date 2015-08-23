@@ -7,19 +7,34 @@
 //
 
 import UIKit
+import Parse
 
-class PopularTableViewController: UITableViewController {
+
+class PopularTableViewController: UITableViewController, DAOFoodtruckProtocol {
+    
+    let dbFoodtruck = DAOFoodtruck()
+    var arrayTable = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dbFoodtruck.delegate = self
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        dbFoodtruck.listaFoodtrucksPorMelhorAvalicacao()
     }
 
+    func terminouRequisicaoListaFoodtrucks(var array:[PFObject]){
+        arrayTable = array
+        
+        self.tableView.reloadData()
+    }
+    func terminouRequisicaoListaFoodtrucksErro(){}
+    
+    func terminouSalvarFoodtruck(){}
+    
+    func terminouAvaliarSucesso(){}
+    func terminouAvaliarErro(){}
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -30,20 +45,34 @@ class PopularTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 1
+        return 1 
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 10
+        return arrayTable.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("popularCell", forIndexPath: indexPath) as! PopularTableViewCell
+        
+        let objetoAtual = arrayTable[indexPath.row] as! PFObject
+        
+        if let arquivoFoto = objetoAtual["logo"] as? PFFile {
+            arquivoFoto.getDataInBackgroundWithBlock({ (foto, error) -> Void in
+                if(foto != nil){
+                    cell.logoCell.image = UIImage(data: foto!)
+                }
+            })
+        }
+        
+        cell.titleCell.text = objetoAtual["nome"] as? String
+        cell.categoryCell.text = objetoAtual["categoria"] as? String
+        cell.valueCell.text = objetoAtual["preco"] as? String
 
-        // Configure the cell...
-
+        
+        
         return cell
     }
 

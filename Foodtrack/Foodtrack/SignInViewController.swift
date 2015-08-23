@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class SignInViewController: ResponsiveTextFieldViewController {
     var dbUsuario = DAOUsuario()
     
     //  Simple Var
@@ -37,11 +37,21 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func enterAction(sender: AnyObject) {
-        SignInViewController.signIn = true
-        self.navigationController?.popViewControllerAnimated(false)
         
-        //let result = dbUsuario.logarUsuario("humbertovsieira12castro@gmail.com", senha: "123")
-        //println("O RESULTADO DO LOGIN FOI: \(result)")
+        let result = dbUsuario.logarUsuario(emailTxt.text, senha: passwordTxt.text)
+        
+        if result {
+            alertSucess("Sucesso", "Usuário logado!")
+            SignInViewController.signIn = result
+            
+            self.navigationController?.popViewControllerAnimated(false)
+        }else{
+            alertError("Falha", "Usuário não existe")
+        }
+        
+        
+        
+        println("O RESULTADO DO LOGIN FOI: \(result)")
         
     }
     

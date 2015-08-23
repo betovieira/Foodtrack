@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class SignUpViewController: UIViewController, DAOUsuarioProtocol {
+class SignUpViewController: ResponsiveTextFieldViewController, DAOUsuarioProtocol {
 
     //UIButton
     @IBOutlet weak var SignUpWithFacebookButton: UIButton!
@@ -41,9 +41,11 @@ class SignUpViewController: UIViewController, DAOUsuarioProtocol {
     
     func cadastroSucesso(){
         /* Aqui coloca o evento do que acontece quando ele é cadastrado com sucesso */
+        
     }
     func cadastroErro(error:NSError){
         /* Erro na hora do login */
+        print("ble")
     }
     
 
@@ -53,16 +55,21 @@ class SignUpViewController: UIViewController, DAOUsuarioProtocol {
     }
     
     @IBAction func enterAction(sender: AnyObject) {
-        SignInViewController.signIn = true
-        self.navigationController?.popViewControllerAnimated(false)
-        /*
-        var usuario = PFUser()
-        usuario.username = "humbertovieira12castro@gmail.com"
-        usuario.password = "123"
-        usuario.email = "humbertovieira12castro@gmail.com"
-        usuario["nome"] = "Jobs"
+
         
-        dbUsuario.cadastrarUsuario(usuario)*/
+        var usuario = PFUser()
+        usuario.username = emailTxt.text
+        usuario.password = passwordTxt.text
+        usuario.email = emailTxt.text
+        usuario["nome"] = nameTxt.text
+        
+        if dbUsuario.cadastrarUsuario(usuario) {
+            SignInViewController.signIn = true
+            self.navigationController?.popViewControllerAnimated(false)
+            alertSucess("Sucesso", "Cadastrado com sucesso!")
+        }else {
+            alertError("Erro", "Alguns campos não foram preenchidos")
+        }
     }
     
     @IBAction func SignUpWithFacebook(sender: AnyObject) {

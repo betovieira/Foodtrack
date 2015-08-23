@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import ParseUI
 
-class TrucksTableViewCell: UITableViewCell {
+class TrucksTableViewCell: PFTableViewCell {
 
     @IBOutlet weak var logoCell: UIImageView!
     @IBOutlet weak var titleCell: UILabel!
@@ -28,6 +29,6 @@ class TrucksTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
+    } 
 
 }

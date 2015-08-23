@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Parse
 
-class TrucksTableViewController: UITableViewController {
+class TrucksTableViewController: UITableViewController, DAOFoodtruckProtocol {
 
     // set barName
     @IBOutlet weak var navName: UINavigationItem!
@@ -16,13 +17,37 @@ class TrucksTableViewController: UITableViewController {
     // get index category
     static var tag = Int()
     
+    var arrayTable = []
+    
+    let dbFoodtruck = DAOFoodtruck()
+    
+    
     // category
     var category = ["Hamburguer", "Hotdog", "Massas", "Vegetariano", "Oriental", "Doces", "Bebidas", "Salgados"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navName.title = category[TrucksTableViewController.tag]
+        var nomeCategoria = category[TrucksTableViewController.tag]
+        navName.title = nomeCategoria
+        
+        dbFoodtruck.delegate = self
+        
+        
+        dbFoodtruck.listaFoodtrucksPorCategoria(nomeCategoria)
+        
+        
     }
+    
+    func terminouRequisicaoListaFoodtrucks(var array:[PFObject]){
+        arrayTable = array
+        self.tableView.reloadData()
+    }
+    func terminouRequisicaoListaFoodtrucksErro(){}
+    
+    func terminouSalvarFoodtruck(){}
+    
+    func terminouAvaliarSucesso(){}
+    func terminouAvaliarErro(){}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -34,18 +59,33 @@ class TrucksTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 1
+        return 1 
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 10
+        return arrayTable.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("trucksCell", forIndexPath: indexPath) as! TrucksTableViewCell
-
+        
+        let objetoAtual = arrayTable[indexPath.row] as! PFObject
+        
+        if let arquivoFoto = objetoAtual["logo"] as? PFFile {
+            arquivoFoto.getDataInBackgroundWithBlock({ (foto, error) -> Void in
+                if(foto != nil){
+                    cell.logoCell.image = UIImage(data: foto!)
+                } 
+            })
+        }
+        
+        cell.titleCell.text = objetoAtual["nome"] as? String
+        cell.categoryCell.text = objetoAtual["categoria"] as? String
+        cell.valueCell.text = objetoAtual["preco"] as? String
+        
         // Configure the cell...
 
         return cell

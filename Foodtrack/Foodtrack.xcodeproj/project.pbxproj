@@ -25,6 +25,9 @@
 		75D457141B89721100D22361 /* FoodtrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D457131B89721100D22361 /* FoodtrackViewController.swift */; };
 		75D457161B89787B00D22361 /* PopularTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D457151B89787B00D22361 /* PopularTableViewController.swift */; };
 		75D4571A1B8979F800D22361 /* TrucksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D457191B8979F800D22361 /* TrucksTableViewController.swift */; };
+		75D4571C1B897F8700D22361 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D4571B1B897F8700D22361 /* CategoryTableViewCell.swift */; };
+		75D4571E1B898F8D00D22361 /* TrucksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D4571D1B898F8D00D22361 /* TrucksTableViewCell.swift */; };
+		75D457201B898FA600D22361 /* PopularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D4571F1B898FA600D22361 /* PopularTableViewCell.swift */; };
 		DB90CDF61B897E78000DEE61 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CDEF1B897E78000DEE61 /* Bolts.framework */; };
 		DB90CDF71B897E78000DEE61 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CDF01B897E78000DEE61 /* Parse.framework */; };
 		DB90CDF81B897E78000DEE61 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB90CDF11B897E78000DEE61 /* ParseCrashReporting.framework */; };
@@ -44,9 +47,7 @@
 		DB90CE141B8980AD000DEE61 /* DAOUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90CE131B8980AD000DEE61 /* DAOUsuario.swift */; };
 		DB90CE161B8980D3000DEE61 /* DAOFoodtruck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90CE151B8980D3000DEE61 /* DAOFoodtruck.swift */; };
 		DB90CE181B8980E3000DEE61 /* DAOPromocao.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90CE171B8980E3000DEE61 /* DAOPromocao.swift */; };
-		75D4571C1B897F8700D22361 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D4571B1B897F8700D22361 /* CategoryTableViewCell.swift */; };
-		75D4571E1B898F8D00D22361 /* TrucksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D4571D1B898F8D00D22361 /* TrucksTableViewCell.swift */; };
-		75D457201B898FA600D22361 /* PopularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D4571F1B898FA600D22361 /* PopularTableViewCell.swift */; };
+		DB90CE1A1B89A407000DEE61 /* ResponsiveTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90CE191B89A407000DEE61 /* ResponsiveTextFieldViewController.swift */; };
 		DBC02CDF1B891FD400C8E14A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC02CDE1B891FD400C8E14A /* AppDelegate.swift */; };
 		DBC02CE41B891FD400C8E14A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC02CE21B891FD400C8E14A /* Main.storyboard */; };
 		DBC02CE61B891FD400C8E14A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC02CE51B891FD400C8E14A /* Images.xcassets */; };
@@ -91,6 +92,9 @@
 		75D457131B89721100D22361 /* FoodtrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodtrackViewController.swift; sourceTree = "<group>"; };
 		75D457151B89787B00D22361 /* PopularTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularTableViewController.swift; sourceTree = "<group>"; };
 		75D457191B8979F800D22361 /* TrucksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrucksTableViewController.swift; sourceTree = "<group>"; };
+		75D4571B1B897F8700D22361 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		75D4571D1B898F8D00D22361 /* TrucksTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrucksTableViewCell.swift; sourceTree = "<group>"; };
+		75D4571F1B898FA600D22361 /* PopularTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularTableViewCell.swift; sourceTree = "<group>"; };
 		DB90CDEF1B897E78000DEE61 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		DB90CDF01B897E78000DEE61 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		DB90CDF11B897E78000DEE61 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -110,9 +114,7 @@
 		DB90CE131B8980AD000DEE61 /* DAOUsuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOUsuario.swift; sourceTree = "<group>"; };
 		DB90CE151B8980D3000DEE61 /* DAOFoodtruck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOFoodtruck.swift; sourceTree = "<group>"; };
 		DB90CE171B8980E3000DEE61 /* DAOPromocao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOPromocao.swift; sourceTree = "<group>"; };
-		75D4571B1B897F8700D22361 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
-		75D4571D1B898F8D00D22361 /* TrucksTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrucksTableViewCell.swift; sourceTree = "<group>"; };
-		75D4571F1B898FA600D22361 /* PopularTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularTableViewCell.swift; sourceTree = "<group>"; };
+		DB90CE191B89A407000DEE61 /* ResponsiveTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsiveTextFieldViewController.swift; sourceTree = "<group>"; };
 		DBC02CD91B891FD400C8E14A /* Foodtrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodtrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC02CDD1B891FD400C8E14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBC02CDE1B891FD400C8E14A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		755A14291B8939B000F99266 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				DB90CE191B89A407000DEE61 /* ResponsiveTextFieldViewController.swift */,
 				755A14271B8938D200F99266 /* Alert.swift */,
 			);
 			name = Helper;
@@ -438,6 +441,7 @@
 				75D457121B896E4A00D22361 /* SignUpViewController.swift in Sources */,
 				755A14281B8938D200F99266 /* Alert.swift in Sources */,
 				75D457101B896E4000D22361 /* SignInViewController.swift in Sources */,
+				DB90CE1A1B89A407000DEE61 /* ResponsiveTextFieldViewController.swift in Sources */,
 				75D4571A1B8979F800D22361 /* TrucksTableViewController.swift in Sources */,
 				75D456FD1B89408900D22361 /* UIViewController+REFrostedViewController.m in Sources */,
 				75D456FA1B89408900D22361 /* REFrostedViewController.m in Sources */,

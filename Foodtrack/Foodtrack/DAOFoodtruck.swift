@@ -62,7 +62,7 @@ class DAOFoodtruck: NSObject {
                 //print(objetos)
                 println("Lista de historias foi retornada com sucesso.")
                 self.delegate?.terminouRequisicaoListaFoodtrucks(objetos)
-                
+                 
             } else {
                 println("Houve algum problema ao tentar retornar a lista de historias")
                 self.delegate?.terminouRequisicaoListaFoodtrucksErro()
@@ -77,11 +77,12 @@ class DAOFoodtruck: NSObject {
         
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
             if let objetos = objects as? [PFObject] {
-                //print(objetos)
+
                 println("Lista de historias foi retornada com sucesso.")
                 self.delegate?.terminouRequisicaoListaFoodtrucks(objetos)
                 
             } else {
+                
                 println("Houve algum problema ao tentar retornar a lista de historias")
                 self.delegate?.terminouRequisicaoListaFoodtrucksErro()
             }

@@ -14,9 +14,9 @@ func alertError(title: String, description: String) {
 }
 
 func alertSucess(title: String, description: String) {
-    TWMessageBarManager.sharedInstance().showMessageWithTitle(title, description: description, type: TWMessageBarMessageType.Error, statusBarStyle:UIStatusBarStyle.LightContent, callback:nil)
+    TWMessageBarManager.sharedInstance().showMessageWithTitle(title, description: description, type: TWMessageBarMessageType.Success, statusBarStyle:UIStatusBarStyle.LightContent, callback:nil)
 }
 
 func alertInfo(title: String, description: String) {
-    TWMessageBarManager.sharedInstance().showMessageWithTitle(title, description: description, type: TWMessageBarMessageType.Error, statusBarStyle:UIStatusBarStyle.LightContent, callback:nil)
+    TWMessageBarManager.sharedInstance().showMessageWithTitle(title, description: description, type: TWMessageBarMessageType.Info, statusBarStyle:UIStatusBarStyle.LightContent, callback:nil)
 }
