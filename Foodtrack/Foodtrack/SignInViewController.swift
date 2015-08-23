@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignInViewController: ResponsiveTextFieldViewController {
+class SignInViewController: ResponsiveTextFieldViewController, DAOUsuarioProtocol{
     var dbUsuario = DAOUsuario()
     
     //  Simple Var
@@ -33,6 +33,8 @@ class SignInViewController: ResponsiveTextFieldViewController {
         SignInWithFacebookButton.layer.cornerRadius = 5
         SignInWithTwitterButton.layer.cornerRadius = 5
         enterButton.layer.cornerRadius = 5
+        dbUsuario.delegate = self
+        
         // Do any additional setup after loading the view.
     }
 
@@ -59,9 +61,24 @@ class SignInViewController: ResponsiveTextFieldViewController {
         println("O RESULTADO DO LOGIN FOI: \(result)")
         
     }
+    func loginFacebookSucesso(){
+        alertSucess("Sucesso", "Usuário logado!")
+        SignInViewController.signIn = true
         
+        self.navigationController?.popViewControllerAnimated(false)
+    
+    }
+    func loginFacebookErro(){
+        alertError("Falha", "Usuário não existe")
+    }
+    
+    func cadastroSucesso(){}
+    func cadastroErro(error:NSError){}
+    
     @IBAction func SignInWithFacebook(sender: AnyObject) {
         //  inserir codigo de cadastro via facebook
+        dbUsuario.logarViaFacebook()
+        
     }
     
     @IBAction func SignInWithTwitterButton(sender: AnyObject) {

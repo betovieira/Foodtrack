@@ -41,16 +41,26 @@ class SignUpViewController: ResponsiveTextFieldViewController, DAOUsuarioProtoco
         // Do any additional setup after loading the view.
     }
     
-    func loginFacebookSucesso() {}
-    func loginFacebookErro(){}
+    func loginFacebookSucesso() {
+        alertSucess("Sucesso", "Usuário logado!")
+        SignInViewController.signIn = true
+        
+        self.navigationController?.popViewControllerAnimated(false)
+    }
+    func loginFacebookErro(){
+        alertError("Falha", "Usuário não existe")
+    }
     
     func cadastroSucesso(){
         /* Aqui coloca o evento do que acontece quando ele é cadastrado com sucesso */
+        alertSucess("Sucesso", "Usuário logado!")
+        SignInViewController.signIn = true
         
+        self.navigationController?.popViewControllerAnimated(false)
     }
     func cadastroErro(error:NSError){
         /* Erro na hora do login */
-        print("ble")
+        alertError("Falha", "Usuário não existe")
     }
     
 
@@ -80,7 +90,8 @@ class SignUpViewController: ResponsiveTextFieldViewController, DAOUsuarioProtoco
     @IBAction func SignUpWithFacebook(sender: AnyObject) {
         //  inserir codigo de cadastro via facebook
         
-        
+        dbUsuario.logarViaFacebook()
+
         
     }
 

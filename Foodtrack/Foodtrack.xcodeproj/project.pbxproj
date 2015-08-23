@@ -62,6 +62,12 @@
 		DB90CE161B8980D3000DEE61 /* DAOFoodtruck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90CE151B8980D3000DEE61 /* DAOFoodtruck.swift */; };
 		DB90CE181B8980E3000DEE61 /* DAOPromocao.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90CE171B8980E3000DEE61 /* DAOPromocao.swift */; };
 		DB90CE1A1B89A407000DEE61 /* ResponsiveTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90CE191B89A407000DEE61 /* ResponsiveTextFieldViewController.swift */; };
+		DBB2262E1B8A144500F894CD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB2262D1B8A144500F894CD /* MapKit.framework */; };
+		DBB226361B8A164200F894CD /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB226311B8A164200F894CD /* FBAudienceNetwork.framework */; };
+		DBB226371B8A164200F894CD /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB226321B8A164200F894CD /* FBSDKCoreKit.framework */; };
+		DBB226381B8A164200F894CD /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB226331B8A164200F894CD /* FBSDKLoginKit.framework */; };
+		DBB226391B8A164200F894CD /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB226341B8A164200F894CD /* FBSDKMessengerShareKit.framework */; };
+		DBB2263A1B8A164200F894CD /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB226351B8A164200F894CD /* FBSDKShareKit.framework */; };
 		DBC02CDF1B891FD400C8E14A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC02CDE1B891FD400C8E14A /* AppDelegate.swift */; };
 		DBC02CE41B891FD400C8E14A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC02CE21B891FD400C8E14A /* Main.storyboard */; };
 		DBC02CE61B891FD400C8E14A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC02CE51B891FD400C8E14A /* Images.xcassets */; };
@@ -144,6 +150,12 @@
 		DB90CE151B8980D3000DEE61 /* DAOFoodtruck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOFoodtruck.swift; sourceTree = "<group>"; };
 		DB90CE171B8980E3000DEE61 /* DAOPromocao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOPromocao.swift; sourceTree = "<group>"; };
 		DB90CE191B89A407000DEE61 /* ResponsiveTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsiveTextFieldViewController.swift; sourceTree = "<group>"; };
+		DBB2262D1B8A144500F894CD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DBB226311B8A164200F894CD /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		DBB226321B8A164200F894CD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		DBB226331B8A164200F894CD /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		DBB226341B8A164200F894CD /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		DBB226351B8A164200F894CD /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		DBC02CD91B891FD400C8E14A /* Foodtrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodtrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC02CDD1B891FD400C8E14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBC02CDE1B891FD400C8E14A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +174,8 @@
 			files = (
 				DB90CE0D1B897F40000DEE61 /* StoreKit.framework in Frameworks */,
 				DB90CE101B897F4C000DEE61 /* libsqlite3.dylib in Frameworks */,
+				DBB2262E1B8A144500F894CD /* MapKit.framework in Frameworks */,
+				755A14211B89333100F99266 /* Foundation.framework in Frameworks */,
 				DB90CE091B897F40000DEE61 /* CoreLocation.framework in Frameworks */,
 				DB90CE0A1B897F40000DEE61 /* libz.dylib in Frameworks */,
 				DB90CE0B1B897F40000DEE61 /* QuartzCore.framework in Frameworks */,
@@ -169,16 +183,20 @@
 				DB90CE0E1B897F40000DEE61 /* SystemConfiguration.framework in Frameworks */,
 				DB90CE021B897ED1000DEE61 /* CFNetwork.framework in Frameworks */,
 				DB90CE001B897EC5000DEE61 /* AudioToolbox.framework in Frameworks */,
-				DB90CDF91B897E78000DEE61 /* ParseFacebookUtils.framework in Frameworks */,
 				755A14251B89334B00F99266 /* UIKit.framework in Frameworks */,
+				755A14231B89334400F99266 /* CoreGraphics.framework in Frameworks */,
+				DBB226361B8A164200F894CD /* FBAudienceNetwork.framework in Frameworks */,
 				DB90CDFC1B897E78000DEE61 /* ParseUI.framework in Frameworks */,
+				DBB2263A1B8A164200F894CD /* FBSDKShareKit.framework in Frameworks */,
 				DB90CDFA1B897E78000DEE61 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				DBB226381B8A164200F894CD /* FBSDKLoginKit.framework in Frameworks */,
 				DB90CDF81B897E78000DEE61 /* ParseCrashReporting.framework in Frameworks */,
 				DB90CDFB1B897E78000DEE61 /* ParseTwitterUtils.framework in Frameworks */,
-				755A14231B89334400F99266 /* CoreGraphics.framework in Frameworks */,
-				755A14211B89333100F99266 /* Foundation.framework in Frameworks */,
+				DBB226371B8A164200F894CD /* FBSDKCoreKit.framework in Frameworks */,
+				DBB226391B8A164200F894CD /* FBSDKMessengerShareKit.framework in Frameworks */,
 				DB90CDF61B897E78000DEE61 /* Bolts.framework in Frameworks */,
 				DB90CDF71B897E78000DEE61 /* Parse.framework in Frameworks */,
+				DB90CDF91B897E78000DEE61 /* ParseFacebookUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +255,11 @@
 			children = (
 				DB90CE0F1B897F4C000DEE61 /* libsqlite3.dylib */,
 				DB90CE041B897F40000DEE61 /* libz.dylib */,
+				DBB226311B8A164200F894CD /* FBAudienceNetwork.framework */,
+				DBB226321B8A164200F894CD /* FBSDKCoreKit.framework */,
+				DBB226331B8A164200F894CD /* FBSDKLoginKit.framework */,
+				DBB226341B8A164200F894CD /* FBSDKMessengerShareKit.framework */,
+				DBB226351B8A164200F894CD /* FBSDKShareKit.framework */,
 				DB90CE051B897F40000DEE61 /* QuartzCore.framework */,
 				DB90CE061B897F40000DEE61 /* Security.framework */,
 				DB90CE071B897F40000DEE61 /* StoreKit.framework */,
@@ -261,6 +284,7 @@
 		DBC02CD01B891FD400C8E14A = {
 			isa = PBXGroup;
 			children = (
+				DBB2262D1B8A144500F894CD /* MapKit.framework */,
 				DB90CE111B897F5F000DEE61 /* FrameWork2 */,
 				DBC02CDB1B891FD400C8E14A /* Foodtrack */,
 				DBC02CF11B891FD400C8E14A /* FoodtrackTests */,
@@ -409,6 +433,12 @@
 				TargetAttributes = {
 					DBC02CD81B891FD400C8E14A = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 7SCH5Y74F7;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					DBC02CED1B891FD400C8E14A = {
 						CreatedOnToolsVersion = 6.4;
@@ -640,13 +670,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Foodtrack",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Foodtrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Foodtrack/Foodtrack-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -657,13 +691,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Foodtrack",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Foodtrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Foodtrack/Foodtrack-Bridging-Header.h";
 			};
 			name = Release;

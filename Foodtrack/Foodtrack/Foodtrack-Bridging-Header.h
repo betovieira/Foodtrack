@@ -15,3 +15,8 @@
 
 // banner
 #import "BannerLoopView.h"
+
+//Facebook
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
