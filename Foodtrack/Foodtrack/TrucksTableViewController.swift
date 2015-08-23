@@ -17,6 +17,12 @@ class TrucksTableViewController: UITableViewController, DAOFoodtruckProtocol {
     // get index category
     static var tag = Int()
     
+    //get carousel
+    static var image1 = [UIImage()]
+    static var image2 = [UIImage()]
+    static var image3 = [UIImage()]
+
+    
     var arrayTable = []
     
     let dbFoodtruck = DAOFoodtruck()
@@ -85,19 +91,37 @@ class TrucksTableViewController: UITableViewController, DAOFoodtruckProtocol {
         cell.titleCell.text = objetoAtual["nome"] as? String
         cell.categoryCell.text = objetoAtual["categoria"] as? String
         cell.valueCell.text = objetoAtual["preco"] as? String
-        cell.imageView?.tag = indexPath.row
+        
         
         if let arquivoFoto1 = objetoAtual["foto1"] as? PFFile {
             arquivoFoto1.getDataInBackgroundWithBlock({ (foto, error) -> Void in
                 if(foto != nil){
                     cell.imageCell.setBackgroundImage(UIImage(data: foto!), forState: .Normal)
+                    cell.imageCell.tag = indexPath.row
+                    TrucksTableViewController.image1.append(UIImage(data: foto!)!)
+                }
+            })
+        }
+        
+        if let arquivoFoto2 = objetoAtual["foto2"] as? PFFile {
+            arquivoFoto2.getDataInBackgroundWithBlock({ (foto, error) -> Void in
+                if(foto != nil){
+                    TrucksTableViewController.image2.append(UIImage(data: foto!)!)
+                }
+            })
+        }
+        
+        if let arquivoFoto3 = objetoAtual["foto3"] as? PFFile {
+            arquivoFoto3.getDataInBackgroundWithBlock({ (foto, error) -> Void in
+                if(foto != nil){
+                    TrucksTableViewController.image3.append(UIImage(data: foto!)!)
                 }
             })
         }
         
         return cell
     }
-
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

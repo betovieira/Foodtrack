@@ -12,3 +12,6 @@
 
 // alertBar
 #import "TWMessageBarManager.h"
+
+// banner
+#import "BannerLoopView.h"

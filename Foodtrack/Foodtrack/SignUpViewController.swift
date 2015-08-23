@@ -76,7 +76,7 @@ class SignUpViewController: ResponsiveTextFieldViewController, DAOUsuarioProtoco
             alertError("Erro", "Alguns campos não foram preenchidos")
         }
     }
-    
+        
     @IBAction func SignUpWithFacebook(sender: AnyObject) {
         //  inserir codigo de cadastro via facebook
         

@@ -10,10 +10,28 @@ import UIKit
 
 class ShowViewController: UIViewController {
 
+    //  get navBar name
+    @IBOutlet weak var navName: UINavigationItem!
+    static var navBarName = String()
+    @IBOutlet weak var labelName: UILabel!
+    
+    // get index
+    static var index = Int()
+    
+    //  get Image
+    static var getLogo = UIImage()
+    
+    @IBOutlet weak var logo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.logo.image = ShowViewController.getLogo
+        self.logo.layer.cornerRadius = self.logo.frame.size.width/230.0
+        self.logo.layer.masksToBounds = true
+        navName.title = ShowViewController.navBarName
+        var loopView = BannerLoopView(frame: CGRectMake(0, 100, self.view.bounds.size.width, 200), items: [TrucksTableViewController.image1[ShowViewController.index], TrucksTableViewController.image2[ShowViewController.index], TrucksTableViewController.image3[ShowViewController.index]])
+        self.view.addSubview(loopView)
+        self.labelName.text = ShowViewController.navBarName
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +39,6 @@ class ShowViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 

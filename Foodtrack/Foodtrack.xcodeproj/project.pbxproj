@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7537B6DA1B89CAD70035A6EE /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7537B6D91B89CAD70035A6EE /* ShowViewController.swift */; };
+		7537B6E01B89D7180035A6EE /* BannerLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7537B6DF1B89D7180035A6EE /* BannerLoopView.m */; };
 		75485A991B89B38E00857827 /* AvenirLTStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75485A8D1B89B38E00857827 /* AvenirLTStd-Black.otf */; };
 		75485A9A1B89B38E00857827 /* AvenirLTStd-BlackOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75485A8E1B89B38E00857827 /* AvenirLTStd-BlackOblique.otf */; };
 		75485A9B1B89B38E00857827 /* AvenirLTStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75485A8F1B89B38E00857827 /* AvenirLTStd-Book.otf */; };
@@ -80,6 +81,8 @@
 
 /* Begin PBXFileReference section */
 		7537B6D91B89CAD70035A6EE /* ShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
+		7537B6DE1B89D7180035A6EE /* BannerLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerLoopView.h; sourceTree = "<group>"; };
+		7537B6DF1B89D7180035A6EE /* BannerLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerLoopView.m; sourceTree = "<group>"; };
 		75485A8D1B89B38E00857827 /* AvenirLTStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Black.otf"; sourceTree = "<group>"; };
 		75485A8E1B89B38E00857827 /* AvenirLTStd-BlackOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-BlackOblique.otf"; sourceTree = "<group>"; };
 		75485A8F1B89B38E00857827 /* AvenirLTStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Book.otf"; sourceTree = "<group>"; };
@@ -192,6 +195,8 @@
 		755A14261B89339300F99266 /* Front */ = {
 			isa = PBXGroup;
 			children = (
+				7537B6DE1B89D7180035A6EE /* BannerLoopView.h */,
+				7537B6DF1B89D7180035A6EE /* BannerLoopView.m */,
 				75D456D91B89405600D22361 /* SideBar */,
 				755A141D1B8932B000F99266 /* TWMessageBarManager.h */,
 				755A141E1B8932B000F99266 /* TWMessageBarManager.m */,
@@ -506,6 +511,7 @@
 				DB90CE141B8980AD000DEE61 /* DAOUsuario.swift in Sources */,
 				75D4571E1B898F8D00D22361 /* TrucksTableViewCell.swift in Sources */,
 				75D456FB1B89408900D22361 /* UIImage+REFrostedViewController.m in Sources */,
+				7537B6E01B89D7180035A6EE /* BannerLoopView.m in Sources */,
 				75D4571C1B897F8700D22361 /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

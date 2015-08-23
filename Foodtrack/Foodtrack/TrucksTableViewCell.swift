@@ -18,6 +18,16 @@ class TrucksTableViewCell: PFTableViewCell {
     @IBOutlet weak var imageCell: UIButton!
     @IBOutlet weak var valueCell: UILabel!
     @IBOutlet weak var distanceCell: UILabel!
+    @IBOutlet weak var viewCell: UIView!
+    
+    // String Foodtruck name
+    static var foodName = [String()]
+    
+    @IBAction func getName(sender: AnyObject) {
+        ShowViewController.navBarName = titleCell.text!
+        ShowViewController.index = sender.tag+1
+        ShowViewController.getLogo = logoCell.image!
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

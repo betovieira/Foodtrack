@@ -84,12 +84,13 @@ class PopularTableViewController: UITableViewController, DAOFoodtruckProtocol {
             })
         }
         
-
-        
-        
         return cell
     }
 
+    @IBAction func popButton(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

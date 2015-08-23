@@ -59,7 +59,7 @@ class SignInViewController: ResponsiveTextFieldViewController {
         println("O RESULTADO DO LOGIN FOI: \(result)")
         
     }
-    
+        
     @IBAction func SignInWithFacebook(sender: AnyObject) {
         //  inserir codigo de cadastro via facebook
     }
