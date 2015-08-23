@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75485A991B89B38E00857827 /* AvenirLTStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75485A8D1B89B38E00857827 /* AvenirLTStd-Black.otf */; };
+		75485A9A1B89B38E00857827 /* AvenirLTStd-BlackOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75485A8E1B89B38E00857827 /* AvenirLTStd-BlackOblique.otf */; };
+		75485A9B1B89B38E00857827 /* AvenirLTStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75485A8F1B89B38E00857827 /* AvenirLTStd-Book.otf */; };
+		75485A9C1B89B38E00857827 /* AvenirLTStd-BookOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75485A901B89B38E00857827 /* AvenirLTStd-BookOblique.otf */; };
+		75485A9D1B89B38E00857827 /* AvenirLTStd-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75485A911B89B38E00857827 /* AvenirLTStd-Heavy.otf */; };
+		75485A9E1B89B38E00857827 /* AvenirLTStd-HeavyOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75485A921B89B38E00857827 /* AvenirLTStd-HeavyOblique.otf */; };
+		75485A9F1B89B38E00857827 /* AvenirLTStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75485A931B89B38E00857827 /* AvenirLTStd-Light.otf */; };
+		75485AA01B89B38E00857827 /* AvenirLTStd-LightOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75485A941B89B38E00857827 /* AvenirLTStd-LightOblique.otf */; };
+		75485AA11B89B38E00857827 /* AvenirLTStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75485A951B89B38E00857827 /* AvenirLTStd-Medium.otf */; };
+		75485AA21B89B38E00857827 /* AvenirLTStd-MediumOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75485A961B89B38E00857827 /* AvenirLTStd-MediumOblique.otf */; };
+		75485AA31B89B38E00857827 /* AvenirLTStd-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75485A971B89B38E00857827 /* AvenirLTStd-Oblique.otf */; };
+		75485AA41B89B38E00857827 /* AvenirLTStd-Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75485A981B89B38E00857827 /* AvenirLTStd-Roman.otf */; };
 		755A141F1B8932B000F99266 /* TWMessageBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 755A141E1B8932B000F99266 /* TWMessageBarManager.m */; };
 		755A14211B89333100F99266 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755A14201B89333100F99266 /* Foundation.framework */; };
 		755A14231B89334400F99266 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755A14221B89334400F99266 /* CoreGraphics.framework */; };
@@ -66,6 +78,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75485A8D1B89B38E00857827 /* AvenirLTStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Black.otf"; sourceTree = "<group>"; };
+		75485A8E1B89B38E00857827 /* AvenirLTStd-BlackOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-BlackOblique.otf"; sourceTree = "<group>"; };
+		75485A8F1B89B38E00857827 /* AvenirLTStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Book.otf"; sourceTree = "<group>"; };
+		75485A901B89B38E00857827 /* AvenirLTStd-BookOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-BookOblique.otf"; sourceTree = "<group>"; };
+		75485A911B89B38E00857827 /* AvenirLTStd-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Heavy.otf"; sourceTree = "<group>"; };
+		75485A921B89B38E00857827 /* AvenirLTStd-HeavyOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-HeavyOblique.otf"; sourceTree = "<group>"; };
+		75485A931B89B38E00857827 /* AvenirLTStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Light.otf"; sourceTree = "<group>"; };
+		75485A941B89B38E00857827 /* AvenirLTStd-LightOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-LightOblique.otf"; sourceTree = "<group>"; };
+		75485A951B89B38E00857827 /* AvenirLTStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Medium.otf"; sourceTree = "<group>"; };
+		75485A961B89B38E00857827 /* AvenirLTStd-MediumOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-MediumOblique.otf"; sourceTree = "<group>"; };
+		75485A971B89B38E00857827 /* AvenirLTStd-Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Oblique.otf"; sourceTree = "<group>"; };
+		75485A981B89B38E00857827 /* AvenirLTStd-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Roman.otf"; sourceTree = "<group>"; };
 		755A141C1B8932AF00F99266 /* Foodtrack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Foodtrack-Bridging-Header.h"; sourceTree = "<group>"; };
 		755A141D1B8932B000F99266 /* TWMessageBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWMessageBarManager.h; sourceTree = "<group>"; };
 		755A141E1B8932B000F99266 /* TWMessageBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMessageBarManager.m; sourceTree = "<group>"; };
@@ -276,6 +300,18 @@
 		DBC02CDC1B891FD400C8E14A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				75485A8D1B89B38E00857827 /* AvenirLTStd-Black.otf */,
+				75485A8E1B89B38E00857827 /* AvenirLTStd-BlackOblique.otf */,
+				75485A8F1B89B38E00857827 /* AvenirLTStd-Book.otf */,
+				75485A901B89B38E00857827 /* AvenirLTStd-BookOblique.otf */,
+				75485A911B89B38E00857827 /* AvenirLTStd-Heavy.otf */,
+				75485A921B89B38E00857827 /* AvenirLTStd-HeavyOblique.otf */,
+				75485A931B89B38E00857827 /* AvenirLTStd-Light.otf */,
+				75485A941B89B38E00857827 /* AvenirLTStd-LightOblique.otf */,
+				75485A951B89B38E00857827 /* AvenirLTStd-Medium.otf */,
+				75485A961B89B38E00857827 /* AvenirLTStd-MediumOblique.otf */,
+				75485A971B89B38E00857827 /* AvenirLTStd-Oblique.otf */,
+				75485A981B89B38E00857827 /* AvenirLTStd-Roman.otf */,
 				DBC02CDD1B891FD400C8E14A /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -396,8 +432,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75485A9E1B89B38E00857827 /* AvenirLTStd-HeavyOblique.otf in Resources */,
 				DBC02CE41B891FD400C8E14A /* Main.storyboard in Resources */,
+				75485AA21B89B38E00857827 /* AvenirLTStd-MediumOblique.otf in Resources */,
 				DBC02CE91B891FD400C8E14A /* LaunchScreen.xib in Resources */,
+				75485AA11B89B38E00857827 /* AvenirLTStd-Medium.otf in Resources */,
+				75485A991B89B38E00857827 /* AvenirLTStd-Black.otf in Resources */,
+				75485A9B1B89B38E00857827 /* AvenirLTStd-Book.otf in Resources */,
+				75485AA01B89B38E00857827 /* AvenirLTStd-LightOblique.otf in Resources */,
+				75485AA41B89B38E00857827 /* AvenirLTStd-Roman.otf in Resources */,
+				75485AA31B89B38E00857827 /* AvenirLTStd-Oblique.otf in Resources */,
+				75485A9C1B89B38E00857827 /* AvenirLTStd-BookOblique.otf in Resources */,
+				75485A9A1B89B38E00857827 /* AvenirLTStd-BlackOblique.otf in Resources */,
+				75485A9F1B89B38E00857827 /* AvenirLTStd-Light.otf in Resources */,
+				75485A9D1B89B38E00857827 /* AvenirLTStd-Heavy.otf in Resources */,
 				DBC02CE61B891FD400C8E14A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

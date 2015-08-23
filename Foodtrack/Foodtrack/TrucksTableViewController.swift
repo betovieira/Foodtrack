@@ -23,7 +23,7 @@ class TrucksTableViewController: UITableViewController, DAOFoodtruckProtocol {
     
     
     // category
-    var category = ["Hamburguer", "Hotdog", "Massas", "Vegetariano", "Oriental", "Doces", "Bebidas", "Salgados"]
+    var category = ["Hamburguer", "Hot Dog", "Massas", "Vegetariano", "Oriental", "Doces", "Bebidas", "Salgados"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

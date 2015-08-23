@@ -25,6 +25,11 @@ class SignInViewController: ResponsiveTextFieldViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController!.navigationBar.barTintColor = UIColor(red: 83/255.0, green: 71/255.0, blue: 65/255.0, alpha: 1)
+        self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
+        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        self.navigationController!.navigationBar.titleTextAttributes = titleDict as [NSObject : AnyObject]
+
         SignInWithFacebookButton.layer.cornerRadius = 5
         SignInWithTwitterButton.layer.cornerRadius = 5
         enterButton.layer.cornerRadius = 5
