@@ -10,10 +10,24 @@ import UIKit
 
 class FoodtrackViewController: UIViewController {
 
+    @IBOutlet weak var popularButton: UIButton!
+    @IBOutlet weak var categoryButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //popularButton.layer.cornerRadius = 10
+        //categoryButton.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        super.viewWillDisappear(animated)
     }
 
     override func didReceiveMemoryWarning() {
