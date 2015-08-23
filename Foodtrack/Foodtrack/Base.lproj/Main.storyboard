@@ -98,6 +98,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1hL-kg-9cd">
+                                <rect key="frame" x="0.0" y="2" width="375" height="601"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foodtrack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26Z-WB-Ceu">
                                 <rect key="frame" x="62" y="56" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -153,9 +156,6 @@
                                     <action selector="enterAction:" destination="dqp-FC-qfY" eventType="touchUpInside" id="rxi-uF-sKF"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1hL-kg-9cd">
-                                <rect key="frame" x="0.0" y="2" width="375" height="601"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -166,7 +166,9 @@
                     <connections>
                         <outlet property="SignInWithFacebookButton" destination="Ba0-hr-Vgm" id="qXh-1N-a3M"/>
                         <outlet property="SignInWithTwitterButton" destination="nmM-OH-tM1" id="1ZS-dm-YFk"/>
+                        <outlet property="emailTxt" destination="cuI-Ha-Myx" id="r0a-eW-zuo"/>
                         <outlet property="enterButton" destination="RY2-b1-MZD" id="2tb-dA-oJc"/>
+                        <outlet property="passwordTxt" destination="hCX-wh-yLJ" id="hpo-Xt-oam"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MWV-et-Ks3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -267,21 +269,6 @@
                                     <action selector="SignUpWithTwitterButton:" destination="Y2u-g7-K5d" eventType="touchUpInside" id="Pdz-mC-yCN"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TrT-Rr-nHa">
-                                <rect key="frame" x="62" y="363" width="250" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NYG-fd-Gcb">
-                                <rect key="frame" x="62" y="401" width="250" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password Again:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DRr-Qk-D3b">
-                                <rect key="frame" x="62" y="439" width="250" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GV-ad-90J">
                                 <rect key="frame" x="62" y="517" width="250" height="30"/>
                                 <color key="backgroundColor" red="0.1529411765" green="0.68235294120000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -293,6 +280,26 @@
                                     <action selector="enterAction:" destination="Y2u-g7-K5d" eventType="touchUpInside" id="Y26-74-0gD"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password Again:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eo4-OT-9AK">
+                                <rect key="frame" x="62" y="463" width="250" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TrT-Rr-nHa">
+                                <rect key="frame" x="62" y="349" width="250" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NYG-fd-Gcb">
+                                <rect key="frame" x="62" y="387" width="250" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DRr-Qk-D3b">
+                                <rect key="frame" x="62" y="425" width="250" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -303,7 +310,11 @@
                     <connections>
                         <outlet property="SignUpWithFacebookButton" destination="TH9-yw-xB6" id="RKo-R6-q2g"/>
                         <outlet property="SignUpWithTwitterButton" destination="TAi-X0-fj0" id="c1X-Zz-S83"/>
+                        <outlet property="emailTxt" destination="NYG-fd-Gcb" id="iLe-K8-NYe"/>
                         <outlet property="enterButton" destination="5GV-ad-90J" id="vk4-5x-wjS"/>
+                        <outlet property="nameTxt" destination="TrT-Rr-nHa" id="9Km-21-kl0"/>
+                        <outlet property="passwordAgainTxt" destination="eo4-OT-9AK" id="Dse-Q0-Irt"/>
+                        <outlet property="passwordTxt" destination="DRr-Qk-D3b" id="6BW-Hz-jpb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ghx-Rc-HgP" userLabel="First Responder" sceneMemberID="firstResponder"/>

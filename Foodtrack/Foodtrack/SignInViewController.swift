@@ -14,11 +14,15 @@ class SignInViewController: UIViewController {
     //  Simple Var
     static var signIn = false
     
-    //UIButton
+    //  UIButton
     @IBOutlet weak var SignInWithFacebookButton: UIButton!
     @IBOutlet weak var SignInWithTwitterButton: UIButton!
     @IBOutlet weak var enterButton: UIButton!
 
+    //  UITextField
+    @IBOutlet weak var emailTxt: UITextField!
+    @IBOutlet weak var passwordTxt: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         SignInWithFacebookButton.layer.cornerRadius = 5

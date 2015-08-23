@@ -16,6 +16,12 @@ class SignUpViewController: UIViewController, DAOUsuarioProtocol {
     @IBOutlet weak var SignUpWithTwitterButton: UIButton!
     @IBOutlet weak var enterButton: UIButton!
     
+    //  UITextField
+    @IBOutlet weak var nameTxt: UITextField!
+    @IBOutlet weak var emailTxt: UITextField!
+    @IBOutlet weak var passwordTxt: UITextField!
+    @IBOutlet weak var passwordAgainTxt: UITextField!
+    
     //BANCO
     let dbUsuario = DAOUsuario()
 
