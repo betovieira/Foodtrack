@@ -17,12 +17,6 @@ class TrucksTableViewController: UITableViewController, DAOFoodtruckProtocol {
     // get index category
     static var tag = Int()
     
-    //get carousel
-    static var image1 = [UIImage()]
-    static var image2 = [UIImage()]
-    static var image3 = [UIImage()]
-
-    
     var arrayTable = []
     
     let dbFoodtruck = DAOFoodtruck()
@@ -35,13 +29,8 @@ class TrucksTableViewController: UITableViewController, DAOFoodtruckProtocol {
         super.viewDidLoad()
         var nomeCategoria = category[TrucksTableViewController.tag]
         navName.title = nomeCategoria
-        
         dbFoodtruck.delegate = self
-        
-        
         dbFoodtruck.listaFoodtrucksPorCategoria(nomeCategoria)
-        
-        
     }
     
     func terminouRequisicaoListaFoodtrucks(var array:[PFObject]){
@@ -98,7 +87,6 @@ class TrucksTableViewController: UITableViewController, DAOFoodtruckProtocol {
                 if(foto != nil){
                     cell.imageCell.setBackgroundImage(UIImage(data: foto!), forState: .Normal)
                     cell.imageCell.tag = indexPath.row
-                    TrucksTableViewController.image1.append(UIImage(data: foto!)!)
                 }
             })
         }
@@ -106,7 +94,7 @@ class TrucksTableViewController: UITableViewController, DAOFoodtruckProtocol {
         if let arquivoFoto2 = objetoAtual["foto2"] as? PFFile {
             arquivoFoto2.getDataInBackgroundWithBlock({ (foto, error) -> Void in
                 if(foto != nil){
-                    TrucksTableViewController.image2.append(UIImage(data: foto!)!)
+                    cell.imageCell2.setBackgroundImage(UIImage(data: foto!), forState: .Normal)
                 }
             })
         }
@@ -114,7 +102,7 @@ class TrucksTableViewController: UITableViewController, DAOFoodtruckProtocol {
         if let arquivoFoto3 = objetoAtual["foto3"] as? PFFile {
             arquivoFoto3.getDataInBackgroundWithBlock({ (foto, error) -> Void in
                 if(foto != nil){
-                    TrucksTableViewController.image3.append(UIImage(data: foto!)!)
+                    cell.imageCell3.setBackgroundImage(UIImage(data: foto!), forState: .Normal)
                 }
             })
         }

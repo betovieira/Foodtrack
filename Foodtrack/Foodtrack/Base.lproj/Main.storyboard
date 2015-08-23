@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JcP-pV-9fc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="AvenirLTStd-Roman.otf">
@@ -130,7 +131,7 @@ compartilhe e se delicie.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="pvC-Jd-6o3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="pvC-Jd-6o3">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="KOp-Ul-Qs3">
@@ -192,6 +193,18 @@ compartilhe e se delicie.</string>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YaT-53-SQE" firstAttribute="top" secondItem="pvC-Jd-6o3" secondAttribute="bottom" id="Ag3-x8-vdm"/>
+                            <constraint firstItem="pvC-Jd-6o3" firstAttribute="top" secondItem="Rlg-ET-glz" secondAttribute="topMargin" id="BAq-ED-hQw"/>
+                            <constraint firstItem="pvC-Jd-6o3" firstAttribute="top" secondItem="Nkn-MQ-mcZ" secondAttribute="bottom" id="Mc4-89-47C"/>
+                            <constraint firstItem="pvC-Jd-6o3" firstAttribute="leading" secondItem="Rlg-ET-glz" secondAttribute="leadingMargin" constant="-16" id="nvC-4k-11H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pvC-Jd-6o3" secondAttribute="trailing" constant="-16" id="o9J-8G-sHx"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Mc4-89-47C"/>
+                            </mask>
+                        </variation>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Sign In" id="RPw-Wh-biJ"/>
@@ -437,6 +450,18 @@ compartilhe e se delicie.</string>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cn1-L0-5pY" id="C23-UF-izb">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImS-Wf-i1p">
+                                            <rect key="frame" x="0.0" y="77" width="375" height="173"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sV8-66-982">
+                                            <rect key="frame" x="0.0" y="76" width="375" height="174"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FoodTrack_Background" translatesAutoresizingMaskIntoConstraints="NO" id="aoZ-ok-FAn">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                         </imageView>
@@ -540,15 +565,33 @@ compartilhe e se delicie.</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="5PQ-pc-Kwq">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaV-1W-ihF">
+                                <rect key="frame" x="177" y="50" width="30" height="30"/>
+                                <state key="normal" backgroundImage="Estrella_Off">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdh-eq-jxP">
+                                <rect key="frame" x="253" y="50" width="30" height="30"/>
+                                <state key="normal" backgroundImage="Estrella_Off">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPP-Yq-s0h">
+                                <rect key="frame" x="215" y="50" width="30" height="30"/>
+                                <state key="normal" backgroundImage="Estrella_Off">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2d5-Ih-K8j">
+                                <rect key="frame" x="329" y="50" width="30" height="30"/>
+                                <state key="normal" backgroundImage="Estrella_Off">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1vi-vQ-ZjB">
                                 <rect key="frame" x="16" y="20" width="60" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.92941176469999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estrelas_0" translatesAutoresizingMaskIntoConstraints="NO" id="Grl-Ax-bLi">
-                                <rect key="frame" x="205" y="64" width="125" height="30"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Coração_off" translatesAutoresizingMaskIntoConstraints="NO" id="05U-aq-23n">
-                                <rect key="frame" x="338" y="64" width="30" height="30"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlz-rW-Ps0">
                                 <rect key="frame" x="16" y="302" width="343" height="128"/>
@@ -557,8 +600,23 @@ compartilhe e se delicie.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHg-CR-8Pb">
+                                <rect key="frame" x="291" y="50" width="30" height="30"/>
+                                <state key="normal" backgroundImage="Estrella_Off">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qC0-LL-gpX">
+                                <rect key="frame" x="329" y="20" width="30" height="30"/>
+                                <state key="normal" backgroundImage="Coração_off">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="like:" destination="idi-Yb-8N3" eventType="touchUpInside" id="uMY-o7-nrh"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgs-7E-1g0">
-                                <rect key="frame" x="97" y="39" width="262" height="21"/>
+                                <rect key="frame" x="97" y="33" width="262" height="18"/>
                                 <fontDescription key="fontDescription" name="AvenirLTStd-Roman" family="Avenir LT Std" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -571,8 +629,14 @@ compartilhe e se delicie.</string>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="labelName" destination="Wgs-7E-1g0" id="Pe3-4m-xGv"/>
+                        <outlet property="like" destination="qC0-LL-gpX" id="Kfd-kw-D3Q"/>
                         <outlet property="logo" destination="1vi-vQ-ZjB" id="DJJ-Kt-Doj"/>
                         <outlet property="navName" destination="dIi-g5-VU5" id="MF3-Ce-GSA"/>
+                        <outlet property="vote1" destination="OaV-1W-ihF" id="jUb-CO-pzs"/>
+                        <outlet property="vote2" destination="GPP-Yq-s0h" id="9Jx-Gp-OAR"/>
+                        <outlet property="vote3" destination="xdh-eq-jxP" id="KGo-BO-48O"/>
+                        <outlet property="vote4" destination="nHg-CR-8Pb" id="CPB-0N-2ry"/>
+                        <outlet property="vote5" destination="2d5-Ih-K8j" id="K5F-zy-Us6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ucg-pP-OYX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -593,6 +657,18 @@ compartilhe e se delicie.</string>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DYL-kK-p0V" id="5kO-PL-KnW">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4w-G3-EfV">
+                                            <rect key="frame" x="207" y="149" width="46" height="30"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgQ-Qo-N4t">
+                                            <rect key="frame" x="122" y="149" width="46" height="30"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FoodTrack_Background" translatesAutoresizingMaskIntoConstraints="NO" id="8Ak-I1-wiX">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                         </imageView>
@@ -607,9 +683,6 @@ compartilhe e se delicie.</string>
                                                 <segue destination="idi-Yb-8N3" kind="show" id="5Mf-32-7To"/>
                                             </connections>
                                         </button>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estrelas_0" translatesAutoresizingMaskIntoConstraints="NO" id="XeW-tw-Xey">
-                                            <rect key="frame" x="242" y="217" width="125" height="25"/>
-                                        </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6aA-wV-Gyx">
                                             <rect key="frame" x="8" y="8" width="60" height="60"/>
                                             <color key="backgroundColor" red="1" green="0.92941176469999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -638,16 +711,37 @@ compartilhe e se delicie.</string>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" tag="111" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estrella_Off" translatesAutoresizingMaskIntoConstraints="NO" id="CGr-9V-5RM">
+                                            <rect key="frame" x="221" y="212" width="30" height="30"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" tag="555" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estrella_Off" translatesAutoresizingMaskIntoConstraints="NO" id="bbG-MC-hKq">
+                                            <rect key="frame" x="337" y="212" width="30" height="30"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" tag="444" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estrella_Off" translatesAutoresizingMaskIntoConstraints="NO" id="xBA-NC-80D">
+                                            <rect key="frame" x="308" y="212" width="30" height="30"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" tag="333" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estrella_Off" translatesAutoresizingMaskIntoConstraints="NO" id="xIO-M2-Y2E">
+                                            <rect key="frame" x="279" y="212" width="30" height="30"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" tag="222" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estrella_Off" translatesAutoresizingMaskIntoConstraints="NO" id="XeW-tw-Xey">
+                                            <rect key="frame" x="250" y="212" width="30" height="30"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="categoryCell" destination="HdR-64-P6P" id="lXI-MX-Tzk"/>
                                     <outlet property="distanceCell" destination="3a6-70-mvC" id="cVG-vn-t9X"/>
                                     <outlet property="imageCell" destination="mj3-VY-kXr" id="IUm-lr-W0Q"/>
+                                    <outlet property="imageCell2" destination="jgQ-Qo-N4t" id="Bnp-6X-4wY"/>
+                                    <outlet property="imageCell3" destination="l4w-G3-EfV" id="wCN-9M-nwO"/>
                                     <outlet property="logoCell" destination="6aA-wV-Gyx" id="fqV-ig-dPn"/>
                                     <outlet property="titleCell" destination="Aux-fb-4AX" id="Svh-xz-yeQ"/>
                                     <outlet property="valueCell" destination="yge-De-sfg" id="mWC-Ta-fS3"/>
-                                    <outlet property="votesCell" destination="XeW-tw-Xey" id="Nz5-Ue-8BL"/>
+                                    <outlet property="vote1" destination="CGr-9V-5RM" id="tWU-BW-MFQ"/>
+                                    <outlet property="vote2" destination="XeW-tw-Xey" id="r2H-GF-egm"/>
+                                    <outlet property="vote3" destination="xIO-M2-Y2E" id="lKq-1F-75L"/>
+                                    <outlet property="vote4" destination="xBA-NC-80D" id="x7U-5a-Yho"/>
+                                    <outlet property="vote5" destination="bbG-MC-hKq" id="8qr-Pd-cha"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -671,7 +765,7 @@ compartilhe e se delicie.</string>
     </scenes>
     <resources>
         <image name="Coração_off" width="59" height="50"/>
-        <image name="Estrelas_0" width="210" height="50"/>
+        <image name="Estrella_Off" width="59" height="50"/>
         <image name="FoodTrack_Background" width="750" height="1334"/>
         <image name="FoodTrack_Top" width="750" height="150"/>
         <image name="Menu_Categorias" width="365" height="145"/>
@@ -682,6 +776,6 @@ compartilhe e se delicie.</string>
         <image name="nome" width="1510" height="152"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5Mf-32-7To"/>
+        <segue reference="po4-K2-KSM"/>
     </inferredMetricsTieBreakers>
 </document>
