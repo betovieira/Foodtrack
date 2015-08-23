@@ -12,13 +12,24 @@
 		755A14231B89334400F99266 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755A14221B89334400F99266 /* CoreGraphics.framework */; };
 		755A14251B89334B00F99266 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755A14241B89334B00F99266 /* UIKit.framework */; };
 		755A14281B8938D200F99266 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755A14271B8938D200F99266 /* Alert.swift */; };
+		75D456D61B893E6C00D22361 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D456D51B893E6C00D22361 /* HomeViewController.swift */; };
+		75D456F81B89408900D22361 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D456ED1B89408900D22361 /* RECommonFunctions.m */; };
+		75D456F91B89408900D22361 /* REFrostedContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D456EF1B89408900D22361 /* REFrostedContainerViewController.m */; };
+		75D456FA1B89408900D22361 /* REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D456F11B89408900D22361 /* REFrostedViewController.m */; };
+		75D456FB1B89408900D22361 /* UIImage+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D456F31B89408900D22361 /* UIImage+REFrostedViewController.m */; };
+		75D456FC1B89408900D22361 /* UIView+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D456F51B89408900D22361 /* UIView+REFrostedViewController.m */; };
+		75D456FD1B89408900D22361 /* UIViewController+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D456F71B89408900D22361 /* UIViewController+REFrostedViewController.m */; };
+		75D4570E1B8967D400D22361 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D4570D1B8967D400D22361 /* CategoryTableViewController.swift */; };
+		75D457101B896E4000D22361 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D4570F1B896E4000D22361 /* SignInViewController.swift */; };
+		75D457121B896E4A00D22361 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D457111B896E4A00D22361 /* SignUpViewController.swift */; };
+		75D457141B89721100D22361 /* FoodtrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D457131B89721100D22361 /* FoodtrackViewController.swift */; };
+		75D457161B89787B00D22361 /* PopularTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D457151B89787B00D22361 /* PopularTableViewController.swift */; };
+		75D4571A1B8979F800D22361 /* TrucksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D457191B8979F800D22361 /* TrucksTableViewController.swift */; };
 		DBC02CDF1B891FD400C8E14A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC02CDE1B891FD400C8E14A /* AppDelegate.swift */; };
-		DBC02CE11B891FD400C8E14A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC02CE01B891FD400C8E14A /* ViewController.swift */; };
 		DBC02CE41B891FD400C8E14A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC02CE21B891FD400C8E14A /* Main.storyboard */; };
 		DBC02CE61B891FD400C8E14A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC02CE51B891FD400C8E14A /* Images.xcassets */; };
 		DBC02CE91B891FD400C8E14A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBC02CE71B891FD400C8E14A /* LaunchScreen.xib */; };
 		DBC02CF51B891FD400C8E14A /* FoodtrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC02CF41B891FD400C8E14A /* FoodtrackTests.swift */; };
-		DBC02D0B1B89256100C8E14A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC02D0A1B89256100C8E14A /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,17 +50,34 @@
 		755A14221B89334400F99266 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		755A14241B89334B00F99266 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		755A14271B8938D200F99266 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		75D456D51B893E6C00D22361 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		75D456EC1B89408900D22361 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		75D456ED1B89408900D22361 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		75D456EE1B89408900D22361 /* REFrostedContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFrostedContainerViewController.h; sourceTree = "<group>"; };
+		75D456EF1B89408900D22361 /* REFrostedContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedContainerViewController.m; sourceTree = "<group>"; };
+		75D456F01B89408900D22361 /* REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFrostedViewController.h; sourceTree = "<group>"; };
+		75D456F11B89408900D22361 /* REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedViewController.m; sourceTree = "<group>"; };
+		75D456F21B89408900D22361 /* UIImage+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+REFrostedViewController.h"; sourceTree = "<group>"; };
+		75D456F31B89408900D22361 /* UIImage+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+REFrostedViewController.m"; sourceTree = "<group>"; };
+		75D456F41B89408900D22361 /* UIView+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+REFrostedViewController.h"; sourceTree = "<group>"; };
+		75D456F51B89408900D22361 /* UIView+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+REFrostedViewController.m"; sourceTree = "<group>"; };
+		75D456F61B89408900D22361 /* UIViewController+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+REFrostedViewController.h"; sourceTree = "<group>"; };
+		75D456F71B89408900D22361 /* UIViewController+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+REFrostedViewController.m"; sourceTree = "<group>"; };
+		75D4570D1B8967D400D22361 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		75D4570F1B896E4000D22361 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		75D457111B896E4A00D22361 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		75D457131B89721100D22361 /* FoodtrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodtrackViewController.swift; sourceTree = "<group>"; };
+		75D457151B89787B00D22361 /* PopularTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularTableViewController.swift; sourceTree = "<group>"; };
+		75D457191B8979F800D22361 /* TrucksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrucksTableViewController.swift; sourceTree = "<group>"; };
 		DBC02CD91B891FD400C8E14A /* Foodtrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodtrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC02CDD1B891FD400C8E14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBC02CDE1B891FD400C8E14A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBC02CE01B891FD400C8E14A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DBC02CE31B891FD400C8E14A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBC02CE51B891FD400C8E14A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DBC02CE81B891FD400C8E14A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DBC02CEE1B891FD400C8E14A /* FoodtrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodtrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC02CF31B891FD400C8E14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBC02CF41B891FD400C8E14A /* FoodtrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodtrackTests.swift; sourceTree = "<group>"; };
-		DBC02D0A1B89256100C8E14A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +104,7 @@
 		755A14261B89339300F99266 /* Front */ = {
 			isa = PBXGroup;
 			children = (
+				75D456D91B89405600D22361 /* SideBar */,
 				755A141D1B8932B000F99266 /* TWMessageBarManager.h */,
 				755A141E1B8932B000F99266 /* TWMessageBarManager.m */,
 			);
@@ -88,6 +117,25 @@
 				755A14271B8938D200F99266 /* Alert.swift */,
 			);
 			name = Helper;
+			sourceTree = "<group>";
+		};
+		75D456D91B89405600D22361 /* SideBar */ = {
+			isa = PBXGroup;
+			children = (
+				75D456EC1B89408900D22361 /* RECommonFunctions.h */,
+				75D456ED1B89408900D22361 /* RECommonFunctions.m */,
+				75D456EE1B89408900D22361 /* REFrostedContainerViewController.h */,
+				75D456EF1B89408900D22361 /* REFrostedContainerViewController.m */,
+				75D456F01B89408900D22361 /* REFrostedViewController.h */,
+				75D456F11B89408900D22361 /* REFrostedViewController.m */,
+				75D456F21B89408900D22361 /* UIImage+REFrostedViewController.h */,
+				75D456F31B89408900D22361 /* UIImage+REFrostedViewController.m */,
+				75D456F41B89408900D22361 /* UIView+REFrostedViewController.h */,
+				75D456F51B89408900D22361 /* UIView+REFrostedViewController.m */,
+				75D456F61B89408900D22361 /* UIViewController+REFrostedViewController.h */,
+				75D456F71B89408900D22361 /* UIViewController+REFrostedViewController.m */,
+			);
+			name = SideBar;
 			sourceTree = "<group>";
 		};
 		DBC02CD01B891FD400C8E14A = {
@@ -115,11 +163,16 @@
 				755A14261B89339300F99266 /* Front */,
 				755A14291B8939B000F99266 /* Helper */,
 				DBC02CDE1B891FD400C8E14A /* AppDelegate.swift */,
-				DBC02CE01B891FD400C8E14A /* ViewController.swift */,
-				DBC02D0A1B89256100C8E14A /* LoginViewController.swift */,
-				DBC02CE21B891FD400C8E14A /* Main.storyboard */,
-				DBC02CE51B891FD400C8E14A /* Images.xcassets */,
 				DBC02CE71B891FD400C8E14A /* LaunchScreen.xib */,
+				DBC02CE21B891FD400C8E14A /* Main.storyboard */,
+				75D456D51B893E6C00D22361 /* HomeViewController.swift */,
+				75D4570F1B896E4000D22361 /* SignInViewController.swift */,
+				75D457111B896E4A00D22361 /* SignUpViewController.swift */,
+				75D457131B89721100D22361 /* FoodtrackViewController.swift */,
+				75D457151B89787B00D22361 /* PopularTableViewController.swift */,
+				75D457191B8979F800D22361 /* TrucksTableViewController.swift */,
+				75D4570D1B8967D400D22361 /* CategoryTableViewController.swift */,
+				DBC02CE51B891FD400C8E14A /* Images.xcassets */,
 				DBC02CDC1B891FD400C8E14A /* Supporting Files */,
 				755A141C1B8932AF00F99266 /* Foodtrack-Bridging-Header.h */,
 			);
@@ -279,10 +332,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				755A141F1B8932B000F99266 /* TWMessageBarManager.m in Sources */,
-				DBC02D0B1B89256100C8E14A /* LoginViewController.swift in Sources */,
-				DBC02CE11B891FD400C8E14A /* ViewController.swift in Sources */,
+				75D456F91B89408900D22361 /* REFrostedContainerViewController.m in Sources */,
+				75D4570E1B8967D400D22361 /* CategoryTableViewController.swift in Sources */,
+				75D456FC1B89408900D22361 /* UIView+REFrostedViewController.m in Sources */,
+				75D457121B896E4A00D22361 /* SignUpViewController.swift in Sources */,
 				755A14281B8938D200F99266 /* Alert.swift in Sources */,
+				75D457101B896E4000D22361 /* SignInViewController.swift in Sources */,
+				75D4571A1B8979F800D22361 /* TrucksTableViewController.swift in Sources */,
+				75D456FD1B89408900D22361 /* UIViewController+REFrostedViewController.m in Sources */,
+				75D456FA1B89408900D22361 /* REFrostedViewController.m in Sources */,
 				DBC02CDF1B891FD400C8E14A /* AppDelegate.swift in Sources */,
+				75D457161B89787B00D22361 /* PopularTableViewController.swift in Sources */,
+				75D457141B89721100D22361 /* FoodtrackViewController.swift in Sources */,
+				75D456D61B893E6C00D22361 /* HomeViewController.swift in Sources */,
+				75D456F81B89408900D22361 /* RECommonFunctions.m in Sources */,
+				75D456FB1B89408900D22361 /* UIImage+REFrostedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
