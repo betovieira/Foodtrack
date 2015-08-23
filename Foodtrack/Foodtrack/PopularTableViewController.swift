@@ -17,6 +17,10 @@ class PopularTableViewController: UITableViewController, DAOFoodtruckProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController!.navigationBar.barTintColor = UIColor(red: 83/255.0, green: 71/255.0, blue: 65/255.0, alpha: 1)
+        self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
+        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        self.navigationController!.navigationBar.titleTextAttributes = titleDict as [NSObject : AnyObject]
         
         dbFoodtruck.delegate = self
 
@@ -70,6 +74,16 @@ class PopularTableViewController: UITableViewController, DAOFoodtruckProtocol {
         cell.titleCell.text = objetoAtual["nome"] as? String
         cell.categoryCell.text = objetoAtual["categoria"] as? String
         cell.valueCell.text = objetoAtual["preco"] as? String
+        
+        
+        if let arquivoFoto1 = objetoAtual["foto1"] as? PFFile {
+            arquivoFoto1.getDataInBackgroundWithBlock({ (foto, error) -> Void in
+                if(foto != nil){
+                    cell.imageCell.setBackgroundImage(UIImage(data: foto!), forState: .Normal)
+                }
+            })
+        }
+        
 
         
         
